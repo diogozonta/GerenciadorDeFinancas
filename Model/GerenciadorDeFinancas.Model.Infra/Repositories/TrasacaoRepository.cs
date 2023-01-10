@@ -7,7 +7,7 @@ namespace GerenciadorDeFinancas.Model.Infra.Repositories
 {
     public class TrasacaoRepository
     {
-        public bool Inserir(string nomeTransacao, string tipoTransacao, DateTime dataTransacao, string descTransacao, double valorTransacao)
+        public bool Inserir(string nomeTransacao, string tipoTransacao, DateTime dataTransacao, string descTransacao, decimal valorTransacao)
         {
             var dataConvertida = dataTransacao.ToString("yyyy-MM-dd"); 
 

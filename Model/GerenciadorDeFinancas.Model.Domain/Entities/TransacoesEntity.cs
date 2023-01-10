@@ -13,6 +13,6 @@ namespace GerenciadorDeFinancas.Model.Domain.Entities
         public string tipoTransacao { get; set; }
         public string dataTransacao { get; set; }
         public string descTransacao { get; set; }
-        public double valorTransacao { get; set; }
+        public decimal valorTransacao { get; set; }
     }
 }

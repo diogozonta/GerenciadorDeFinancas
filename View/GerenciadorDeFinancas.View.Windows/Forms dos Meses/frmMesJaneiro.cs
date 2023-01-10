@@ -17,8 +17,9 @@ namespace GerenciadorDeFinancas.View.Windows.Forms_dos_Meses
         private void btnAdicionarTransacao_Click(object sender, EventArgs e)
         {
             var form = new frmAdicionarTransacao();
+            var form2 = new frmTelaPrincipal();
             form.Show();
-            this.Hide();
+            form2.Close();
         }
 
         private void btnRemoverTransacao_Click(object sender, EventArgs e)

@@ -20,7 +20,6 @@ namespace GerenciadorDeFinancas.View.Windows.Movimentacoes
         public frmAdicionarTransacao()
         {
             InitializeComponent();
-            
         }
 
         private void btnAdicionarTrasacao_Click(object sender, EventArgs e)
@@ -35,15 +34,13 @@ namespace GerenciadorDeFinancas.View.Windows.Movimentacoes
                 tipoEntrada = rbSaida.Text.ToUpper();
             }
 
-            double valorTransacao = double.Parse(txtValorTransacao.Text);
+            decimal valorTransacao = Convert.ToDecimal(txtValorTransacao.Text);
 
             var cadastrou = _transacaoController.InserirTransacao(txtNomeTransacao.Text, tipoEntrada, Convert.ToDateTime(txtDataTransacao.Text), txtDescricaoTransacao.Text, valorTransacao);
 
             if (cadastrou)
             {
                 MessageBox.Show("Transação cadastrada com sucesso");
-                var form = new frmTelaPrincipal();
-                form.Show();
                 this.Hide();
             }
 

@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Controller\GerenciadorDeSenhas.Controller\GerenciadorDeSenhas.Controller.csproj" />
+    <ProjectReference Include="..\..\Controller\GerenciadorDeSenhas.Controller\GerenciadorDeFinancas.Controller.csproj" />
   </ItemGroup>
 
 </Project>
