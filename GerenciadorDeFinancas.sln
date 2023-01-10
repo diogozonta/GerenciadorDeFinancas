@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{0C7C863B-74A5-421E-9913-78E1965C2770}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{355DF7B2-374F-4EC4-8624-379A737E90F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeFinancas.View.Windows", "View\GerenciadorDeFinancas.View.Windows\GerenciadorDeFinancas.View.Windows.csproj", "{57E06329-3954-490D-B7CC-9BD4A333347A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{B6CF27B7-8353-46E1-9F39-2C2F0F0B7933}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeSenhas.Controller", "Controller\GerenciadorDeSenhas.Controller\GerenciadorDeSenhas.Controller.csproj", "{F389F76A-27B2-417D-888C-E1765D98F259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeFinancas.Model.Domain", "Model\GerenciadorDeFinancas.Model.Domain\GerenciadorDeFinancas.Model.Domain.csproj", "{6782A274-0876-42E3-B289-A8C489DBEC50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeFinancas.Model.Infra", "Model\GerenciadorDeFinancas.Model.Infra\GerenciadorDeFinancas.Model.Infra.csproj", "{3121D69E-F2FC-4F18-8339-44C0EE8CD3DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57E06329-3954-490D-B7CC-9BD4A333347A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E06329-3954-490D-B7CC-9BD4A333347A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E06329-3954-490D-B7CC-9BD4A333347A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E06329-3954-490D-B7CC-9BD4A333347A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F389F76A-27B2-417D-888C-E1765D98F259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F389F76A-27B2-417D-888C-E1765D98F259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F389F76A-27B2-417D-888C-E1765D98F259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F389F76A-27B2-417D-888C-E1765D98F259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6782A274-0876-42E3-B289-A8C489DBEC50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6782A274-0876-42E3-B289-A8C489DBEC50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6782A274-0876-42E3-B289-A8C489DBEC50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6782A274-0876-42E3-B289-A8C489DBEC50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3121D69E-F2FC-4F18-8339-44C0EE8CD3DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3121D69E-F2FC-4F18-8339-44C0EE8CD3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3121D69E-F2FC-4F18-8339-44C0EE8CD3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3121D69E-F2FC-4F18-8339-44C0EE8CD3DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{57E06329-3954-490D-B7CC-9BD4A333347A} = {0C7C863B-74A5-421E-9913-78E1965C2770}
+		{F389F76A-27B2-417D-888C-E1765D98F259} = {B6CF27B7-8353-46E1-9F39-2C2F0F0B7933}
+		{6782A274-0876-42E3-B289-A8C489DBEC50} = {355DF7B2-374F-4EC4-8624-379A737E90F9}
+		{3121D69E-F2FC-4F18-8339-44C0EE8CD3DD} = {355DF7B2-374F-4EC4-8624-379A737E90F9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CEB8968D-E438-4D09-9FE0-E3BE453B798E}
+	EndGlobalSection
+EndGlobal
