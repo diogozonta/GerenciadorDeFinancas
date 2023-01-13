@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,7 @@ namespace GerenciadorDeFinancas.View.Windows.Movimentacoes
         private void btnAdicionarTrasacao_Click(object sender, EventArgs e)
         {
             var tipoEntrada = string.Empty;
+
             if (rbEntrada.Checked) 
             {
                 tipoEntrada = rbEntrada.Text.ToUpper();
@@ -34,7 +36,8 @@ namespace GerenciadorDeFinancas.View.Windows.Movimentacoes
                 tipoEntrada = rbSaida.Text.ToUpper();
             }
 
-            decimal valorTransacao = Convert.ToDecimal(txtValorTransacao.Text);
+            //decimal valorTransacao = Convert.ToDecimal(txtValorTransacao.Text);
+            decimal valorTransacao = Convert.ToDecimal(txtValorTransacao.Text, CultureInfo.CurrentCulture);
 
             var cadastrou = _transacaoController.InserirTransacao(txtNomeTransacao.Text, tipoEntrada, Convert.ToDateTime(txtDataTransacao.Text), txtDescricaoTransacao.Text, valorTransacao);
 
